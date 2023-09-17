@@ -6,4 +6,4 @@ PERSONS=("Guna" "Santhu" "Jayanth")
 
 echo "Frist Person: ${PERSONS[0]}"
 
-echo "Frist Person: ${PERSONS[@]}"
+echo "All Person: ${PERSONS[@]}"
