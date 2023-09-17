@@ -1,8 +1,8 @@
 #!/bin/bash
  
  echo "Hello World, I am learning the shell script"
- PERSON1=jayanth
- PERSON2=prakash
+ PERSON1=sriram
+ PERSON2=vishal
 
  echo "$PERSON1: Hi $PERSON2, Good Night"
  echo "$PERSON2: Good Night $PERSON1"
