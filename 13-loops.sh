@@ -1,8 +1,8 @@
 #!/bin/bash
 
-DATE=$(date +%F)
+DATE=$(date +%F-%H-%M-%S)
 LOGSDIR=c/users/ssap0/shellscript-logs
-# c/Users/ssap0/shellscript-logs/script-name-date.log
+# c/users/ssap0/shellscript-logs/script-name-date.log
 SCRIPT_NAME=$0
 LOGFILE=$LOGSDIR/$0-$DATE.log
 USERID=$(id -u)
@@ -31,7 +31,7 @@ VALIDATE(){
 # all args are in $@
 for i in $@
 do
-    yum list installed $i &>>$LOGFILES
+    yum list installed $i &>>$LOGFILE
     if [ $? is -ne 0 ];
     then
         echo "$i is not installed, let's install it"
