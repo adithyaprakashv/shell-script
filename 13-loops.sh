@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATE=$(date +%F-%H-%M-%S)
+DATE=$(date +%F)
 LOGSDIR=c/users/ssap0/shellscript-logs
 # c/users/ssap0/shellscript-logs/script-name-date.log
 SCRIPT_NAME=$0
@@ -11,14 +11,14 @@ N="\e[0m"
 Y="\e[33m"
 G="\e[32m"
 
-if [ $USERID -ne 0 ]
+if [ $USERID -ne 0 ];
 then 
     echo -e "$R ERROR:: Please run this script with root access $N"
-    exit1
+    exit 1
 fi
 
 VALIDATE(){
-    if [ $1 -ne 0 ]
+    if [ $1 -ne 0 ];
     then   
         echo -e "Installing $2 .. $R FAILURE $N"
         exit 1
