@@ -1,8 +1,8 @@
 #!/bin/bash
 
 DATE=$(date +%F)
-LOGSDIR=/shellscript-logs
-# /shellscript-logs/script-name-date.log
+LOGSDIR=shellscript-logs
+# shellscript-logs/script-name-date.log
 SCRIPT_NAME=$0
 LOGFILE=$LOGSDIR/$0-$DATE.log
 USERID=$(id -u)
