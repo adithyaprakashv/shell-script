@@ -32,10 +32,10 @@ VALIDATE(){
 for i in $@
 do
     yum list installed $i &>>$LOGFILE
-    if [ $? is -ne 0 ];
+    if [ $? is -ne 0 ]
     then
         echo "$i is not installed, let's install it"
-        yum install $i -y2 &>>$LOGFILE
+        yum install $i -y &>>$LOGFILE
         VALIDATE $? "$i"
     else
         echo -e "$Y $i is already installed $N"
