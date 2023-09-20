@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATE=$(date +%F-%H-%M-%S)
+DATE=$(date +%F)
 LOGSDIR=/home/centos/shell-script
 # /home/centos/shell-script/script-name-date.log
 SCRIPT_NAME=$0
@@ -25,7 +25,6 @@ VALIDATE(){
     else
         echo -e "Installing $2 .. $G SUCCESS $N"
     fi
-
 }
 
 # all args are in $@
